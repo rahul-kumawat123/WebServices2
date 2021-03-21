@@ -35,6 +35,9 @@ object ApiClient {
         }
 
 
+    /**
+     * prepare and return cache
+     */
 
     @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
     private fun cache(): Cache {
@@ -44,6 +47,10 @@ object ApiClient {
     }
 
 
+
+    /**
+     * httpLoggingInterceptor instance
+     */
     private fun httpLoggingInterceptor(): Interceptor{
 
         val interceptor = HttpLoggingInterceptor()
@@ -53,6 +60,10 @@ object ApiClient {
     }
 
 
+    /**
+     * This interceptor will be called both if the network is available and if the network is not available
+     * @return offlineInterceptor
+     */
     private fun offlineInterceptor(): Interceptor {
 
         return Interceptor { chain ->
@@ -74,6 +85,10 @@ object ApiClient {
         }
     }
 
+    /**
+     * This interceptor will be called ONLY if the network is available
+     * @return networkInterceptor
+     */
 
     private fun networkInterceptor(): Interceptor {
 

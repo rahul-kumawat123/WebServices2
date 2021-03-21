@@ -8,9 +8,9 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:elevation="10dp"
-        android:layout_margin="3dp"
+        android:layout_height="@dimen/cardView_height"
+        android:elevation="@dimen/cardView_elevation"
+        android:layout_margin="@dimen/cardView_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -25,8 +25,8 @@
 
             <ImageView
                 android:id="@+id/imageDataImageView"
-                android:layout_width="141dp"
-                android:layout_height="132dp"
+                android:layout_width="@dimen/imageData_iv_width"
+                android:layout_height="@dimen/imageData_iv_height"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -36,8 +36,8 @@
 
             <TextView
                 android:id="@+id/nameDataTextView"
-                android:layout_width="183dp"
-                android:layout_height="49dp"
+                android:layout_width="@dimen/nameData_tv_width"
+                android:layout_height="@dimen/nameData_tv_height"
                 android:layout_marginEnd="28dp"
                 android:layout_marginRight="28dp"
                 android:gravity="center"
@@ -50,8 +50,8 @@
 
             <TextView
                 android:id="@+id/messageDataTextView"
-                android:layout_width="185dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/messageData_tv_width"
+                android:layout_height="@dimen/messageData_tv_height"
                 android:gravity="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

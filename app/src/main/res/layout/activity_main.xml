@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/getDataButton"
-        android:layout_width="196dp"
-        android:layout_height="76dp"
+        android:layout_width="@dimen/getData_btn_width"
+        android:layout_height="@dimen/getData_btn_height"
         android:text="@string/get_data"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
